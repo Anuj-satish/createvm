@@ -1,0 +1,10 @@
+---
+- name: This sets up ngnix webserver
+  hosts: 3.83.98.238
+  tasks:
+    - name: ensure nginx is at the latest version
+      apt: name=nginx state=latest
+    - name: start nginx
+      service:
+          name: nginx
+          state: started
