@@ -1,6 +1,7 @@
 ---
 - name: This sets up an httpd webserver
   hosts: 3.83.98.238
+  become: true
   tasks:
   - name: Install apache packages 
     yum:
