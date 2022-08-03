@@ -1,0 +1,10 @@
+---
+- name: This uninstalls ngnix webserver
+  hosts: 3.83.98.238
+  tasks:
+    - name: stop nginx
+      service:
+          name: nginx
+          state: stopped
+    - name: ensure nginx is not installed
+      apt: name=nginx state=absent
