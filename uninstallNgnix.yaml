@@ -1,6 +1,7 @@
 ---
 - name: This uninstalls ngnix webserver
   hosts: 3.83.98.238
+  become: yes
   tasks:
     - name: stop nginx
       service:
