@@ -1,5 +1,5 @@
 ---
-  - hosts: apache
+  - hosts: 3.83.98.238
     become: yes
     tasks:
       - name: install apache2
