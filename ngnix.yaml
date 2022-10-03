@@ -1,6 +1,6 @@
 ---
 - name: This sets up ngnix webserver
-  hosts: 18.209.16.136
+  hosts: 100.24.38.173
   tasks:
     - name: ensure nginx is at the latest version
       apt: name=nginx state=latest
